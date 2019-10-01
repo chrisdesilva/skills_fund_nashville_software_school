@@ -17,7 +17,7 @@
   left: 0;
   bottom: -86%;
   right: 0;
-  background: #9d1996;
+  background: #14a5a9;
   display: block;
   position: absolute;
 }
@@ -40,11 +40,11 @@
 }
 
 .footerLink:hover {
-  color: #9d1996;
+  color: #14a5a9;
 }
 
 .fa-angle-down {
-  color: #9d1996;
+  color: #14a5a9;
 }
 
 #stepCard1:hover {
@@ -60,7 +60,7 @@
 }
 
 .yotpo .yotpo-testimonials-btn {
-  background-color: #9d1996 !important;
+  background-color: #14a5a9 !important;
 }
 
 html {
