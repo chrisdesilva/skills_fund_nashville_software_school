@@ -5,7 +5,7 @@ module.exports = {
       'secondary': '#9d1996',
       'primary': '#14a5a9',
       'tertiary': 'rgb(246, 134, 14)',
-      'purple-150': '#fce4fc'
+      'purple-150': '#bef5f7'
     }),
     textColor: theme => ({
       ...theme('colors'),
