@@ -15,16 +15,16 @@ export const schoolInfo = { // term details section
         { // for multiple examples of interest only, add items to interestOnly array
             programName: '',
             APR36: '10.76 - 10.94%',
-            financeCharge36: '$2,502.00',
-            IOPayment36: '$77.13',
-            FullMonthlyPayment36: '$327.36',
+            financeCharge36: '$2,527.38',
+            IOPayment36: '$77.91',
+            FullMonthlyPayment36: '$330.67',
             APR60: 'XX.XX%',
             financeCharge60: '$X,XXX.XX',
             IOPayment60: '$XX.XX',
             FullMonthlyPayment60: '$XXX.XX',
-            LoanExampleAmt: '$9,900',
-            LoanExampleOFeeAmt: '$396',
-            LoanExampleAmtPlusOFee: '$10,296',
+            LoanExampleAmt: '$10,000',
+            LoanExampleOFeeAmt: '$400',
+            LoanExampleAmtPlusOFee: '$10,400',
             programLength: '6' // program length in months
         }
     ],
@@ -32,14 +32,14 @@ export const schoolInfo = { // term details section
         { // for multiple examples of immmediate repayment, add items to immediateRepayment array
             programName: '',
             APR36: '11.69%',
-            financeCharge36: '$1,885.04',
-            FullMonthlyPayment36: '$327.36',
+            financeCharge36: '$1,904.08',
+            FullMonthlyPayment36: '$330.67',
             APR60: 'XX.XX%',
             financeCharge60: '$X,XXX.XX',
             FullMonthlyPayment60: '$XXX.XX',
-            LoanExampleAmt: '$9,900',
-            LoanExampleOFeeAmt: '$396',
-            LoanExampleAmtPlusOFee: '$10,296'
+            LoanExampleAmt: '$10,000',
+            LoanExampleOFeeAmt: '$400',
+            LoanExampleAmtPlusOFee: '$10,400'
         }
     ]
 }
@@ -58,24 +58,18 @@ export const faq = { // faq section
     origFee: 0.04,
 
     // interest payment FAQ info
-    exampleLoanAmount: '$9,900',
+    exampleLoanAmount: '$10,000',
     interestRate36: '8.99%',
     interestRate60: '10.99%',
     APR36: '10.76 - 10.94%',
     APR60: 'XX.XX - XX.XX%',
-    IOPayment36: '$77.13',
+    IOPayment36: '$77.91',
     IOPayment60: '$95.25',
 
     // max loan amounts by program for faq1
     loanRange: [
         {
-            programName: "the Full Time Web Development, Part Time Web Development, and Full Time Front-End Web Design programs",
-            maxAmount: "$9,900",
-            col: false,
-            colAmount: "$6,000"
-        },
-        {
-            programName: "the Data Science Bootcamp",
+            programName: "the Full Time Web Development, Part Time Web Development, Data Science Bootcamp, and Full Time Front-End Web Design programs",
             maxAmount: "$10,000",
             col: false,
             colAmount: "$6,000"
@@ -213,7 +207,7 @@ export const programLoanInfo = [ // update with program names and corresponding 
         name: "Front-End Web Designer/Developer",
         url: "https://sf.privateloan.studentloan.org/external/LoanApplication.do?lenderCode=SKNASHFR17",
         loanInfo: { // match loanInfo in first metro below
-            maxLoanAmt: 9900,
+            maxLoanAmt: 10000,
             loanTerm36: true,
             loanTerm60: false,
             '0': { 
@@ -231,7 +225,7 @@ export const programLoanInfo = [ // update with program names and corresponding 
             {
               location: "Metro A",
               loanInfo: { // match loanInfo to Program 3 loanInfo above
-                maxLoanAmt: 9900,
+                maxLoanAmt: 10000,
                 loanTerm36: true,
                 loanTerm60: false,
                 '0': { 
@@ -248,7 +242,7 @@ export const programLoanInfo = [ // update with program names and corresponding 
         name: "Web Development Full-Time",
         url: "https://sf.privateloan.studentloan.org/external/LoanApplication.do?lenderCode=SKNASHWEB1",
         loanInfo: { // match loanInfo in first metro below
-            maxLoanAmt: 9900,
+            maxLoanAmt: 10000,
             loanTerm36: true,
             loanTerm60: false,
             '0': { 
@@ -266,7 +260,7 @@ export const programLoanInfo = [ // update with program names and corresponding 
             {
               location: "Metro A",
               loanInfo: { // match loanInfo to Program 3 loanInfo above
-                maxLoanAmt: 9900,
+                maxLoanAmt: 10000,
                 loanTerm36: true,
                 loanTerm60: false,
                 '0': { 
@@ -283,7 +277,7 @@ export const programLoanInfo = [ // update with program names and corresponding 
         name: "Web Development Part-Time",
         url: "https://sf.privateloan.studentloan.org/external/LoanApplication.do?lenderCode=SKNSSWPT17",
         loanInfo: { // match loanInfo in first metro below
-            maxLoanAmt: 9900,
+            maxLoanAmt: 10000,
             loanTerm36: true,
             loanTerm60: false,
             '0': null,
@@ -300,7 +294,7 @@ export const programLoanInfo = [ // update with program names and corresponding 
             {
               location: "Metro A",
               loanInfo: { // match loanInfo to Program 3 loanInfo above
-                maxLoanAmt: 9900,
+                maxLoanAmt: 10000,
                 loanTerm36: true,
                 loanTerm60: false,
                 '0': null,
@@ -315,7 +309,7 @@ export const programLoanInfo = [ // update with program names and corresponding 
 ]
 
 // ***** BEGIN LOAN CALC TEXT INFO *****
-export const programMaxText = "Choose the loan amount that works best for you. Borrow up to $9,900 for Full-Time Web Development, Part-Time Web Development, or Front-End Web Design tuition, up to $10,000 for Data Science tuition, or up to $6,000 for Data Analytics tuition."
+export const programMaxText = "Choose the loan amount that works best for you. Borrow up to $10,000 for Full-Time Web Development, Part-Time Web Development, Front-End Web Design tuition, or Data Science tuition, or up to $6,000 for Data Analytics tuition."
 
 export const paymentTable = {
     headers: ["Program", "Tuition", "Cost of Living", "Max Total"],
