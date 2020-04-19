@@ -30,8 +30,7 @@ const LoanCalculator = () => {
   const [loanTypes, showLoanTypes] = useState(
     programLoanInfo[0]["showLoanTypes"]
   ) // shows IR/IO dropdown
-  const [metros, setMetros] =
-    useState(programLoanInfo[0]["locations"]) || useState(null)
+  const [metros, setMetros] = useState(programLoanInfo[0]["locations"])
   const [loanInformation, setLoanInformation] = useState(
     programLoanInfo[0]["loanInfo"]
   ) // set initial loan info
@@ -89,11 +88,11 @@ const LoanCalculator = () => {
   const calculateInterest = () => {
     let interest36 = (
       ((loanAmount * (1 + faq.origFee)) / 12) *
-      (8.99 / 100)
+      (interestRates.ir36 / 100)
     ).toFixed(2)
     let interest60 = (
       ((loanAmount * (1 + faq.origFee)) / 12) *
-      (10.99 / 100)
+      (interestRates.ir60 / 100)
     ).toFixed(2)
     setInterestPayment({ payment36: interest36, payment60: interest60 })
   }

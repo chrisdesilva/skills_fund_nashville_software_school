@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ebook from '../images/ebook.jpg'
+import ebook from '../images/WomanClimber_Color.png'
 import { schoolName,skfURL } from '../constants/programInfo'
 
 const LeadCaptureForm = props => {
@@ -61,6 +61,7 @@ const LeadCaptureForm = props => {
         .catch(error => console.log('error: ', error))
         showThankYou(true)
         setEmail('')
+        props.trackGA()
     }
 
     return (
